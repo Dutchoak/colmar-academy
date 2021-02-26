@@ -11,25 +11,35 @@
 
 <body>
 
+    <!-- The fixed and responsive header -->
+
     <header>
         <a href="index.html" alt="Homepage">
             <img src="./resources/images/ic-logo.svg" alt="">
+            <span class="desktop">COLMAR<span>ACADEMY</span></span>
         </a>
-        <span><a href="index.html">COLMAR<span>ACADEMY</span></a></span>
         <nav>
-            <span><a href="#"><img src="./resources/images/ic-on-campus.png" alt="On campus"></a></span>
-            <span><a href="#">On campus</a></span>
-            <span><a href="#"><img src="./resources/images/ic-online.svg" alt="Online"></a></span>
-            <span><a href="#">Online</a></span>
-            <span><a href="#">Our companies</a></span>
-            <span><a href="#"><img src="./resources/images/ic-login.svg" alt="Sign in"></a></span>
-            <span><a href="#">Sign in</a></span>
+            <ul class="desktop">
+                <li><a href="#">On campus</a></li>
+                <li><a href="#">Online</a></li>
+                <li><a href="#">Our companies</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+            <ul class="mobile">
+                <li><a href="#"><img src="./resources/images/ic-on-campus.png" alt="On campus"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-online.svg" alt="Online"></a></li>
+                <li><a href="#"><img src="./resources/images/ic-login.svg" alt="Sign in"></a></li>
+            </ul>
         </nav>
     </header>
 
+    <!-- The main body -->
+
     <div class="main flex-container">
 
-        <div class="learn">
+        <!-- The main banner -->
+
+        <div class="banner">
             <div class="img-container">
                 <img src="./resources/images/banner.jpg" alt="Three people studying at Colmar Academy">
             </div>
@@ -40,8 +50,10 @@
             </div>
         <div>
 
+        <!-- The information section (content-left should dissapear on mobile)-->
+
         <div class="information">
-            <div class="content-left">
+            <div class="content-left desktop">
                 <div class="img-container">
                     <img src="./resources/images/information-main.jpg" alt="Student reading a book">
                 </div>
@@ -89,6 +101,8 @@
                 </div>
             </div>"
         </div>
+
+        <!-- The courses offered by CA -->
 
         <div class="courses">
             <h2>Start learning</h2>
@@ -156,18 +170,23 @@
             </div>
         </div>
 
+        <!-- Thesis exhibit section where only the video shows on mobile -->
+
         <div class="thesis">
             <h2>Thesis exhibit</h2>
             <div class="content-left">
                 <video src="./resources/videos/thesis.mp4"></video>
-                <h3>Reimagine urban</h3>
-                <p class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
-                    nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget 
-                magna laoreet, efficitur dolorconsequat, tristique ligula."</p>
+                <div class="desktop">
+                    <h3>Reimagine urban</h3>
+                    <p class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+                        nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget 
+                    magna laoreet, efficitur dolorconsequat, tristique ligula."</p>
+                </div>
             </div>
-            <div class="content-right">
+            <div class="content-right desktop">
                 <div class="content">
                     <div class="img-container">
+                        <img src="./resources/images/thesis-fisma.jpg" alt="Fisma showcase">
                     </div>
                     <div class="text">
                         <h3>Fisma: Design and Prototype</h3>
@@ -176,6 +195,7 @@
                 </div>
                 <div class="content">
                     <div class="img-container">
+                        <img src="./resources/images/thesis-now-and-then.jpg" alt="Empire state building in New York">
                     </div>
                     <div class="text">
                         <h3>Now and then</h3>
@@ -187,9 +207,8 @@
     </div>
 
     <footer>
-        <span>&copy; 2016 Colmar Academy. All rights reserved</span>   
-        <span><a href="#">Terms</a></span>   
-        <span><a href="#">Privacy</a></span>        
+        &copy; 2016 Colmar Academy. All rights reserved
+        <span class="desktop"><a href="#">Terms</a> <a href="#">Privacy</a></span>        
     </footer>
 
 </body>
