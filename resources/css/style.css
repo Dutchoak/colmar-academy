@@ -1,17 +1,38 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
-    color: rgb(48, 48, 48);
+    color: rgb(68, 68, 68);
 }
 
-/* General styles */
+/* -----------------------------------------------
+
+                    General styles 
+
+----------------------------------------------- */
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 0.75;
 }
 
-.flex-container {
-    display: flex;
+h2,
+h3 {
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.4;
 }
 
 a {
@@ -19,7 +40,28 @@ a {
    color: inherit;
 }
 
-/* Fixed header */
+img {
+    width: 100%;
+}
+
+button {
+    margin-top: 2rem;
+    color: #fff;
+    padding: 0.5rem 0 0.5rem 0;
+    background-color:rgb(68, 68, 68);
+    border: none;
+    border-radius: 1rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/* -----------------------------------------------
+
+                    Fixed header 
+
+----------------------------------------------- */
 
 header {
     position: fixed;
@@ -30,7 +72,6 @@ header {
 }
 
 header .logo {
-    display: flex;
     padding-left: 1.5rem;
     align-items: center;
     font-size: 1.2rem;
@@ -49,6 +90,17 @@ span #academy {
 nav {
     margin-left: auto;
 }
+
+nav ul {
+    justify-content: space-between;
+    padding-right: 1.5rem;
+}
+
+nav ul li {
+    padding-left: 1rem;
+}
+
+/* creating a hover effect for the nav links */
 
 nav .desktop a {
     position: relative;
@@ -71,14 +123,106 @@ nav .desktop a:hover::before {
     transform: scale(1,1);
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
+/* -----------------------------------------------
+
+                    Main section 
+
+----------------------------------------------- */
+
+.main {
+    padding-top: 4rem;
+    flex-direction: row;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.img-container-large {
+   
+    width: 60%;
+    padding: 2rem 1.5rem;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+/* -----------------------------------------------
+
+                    Banner
+
+----------------------------------------------- */
+
+.banner {
+    background-color:rgba(48, 48, 48, 0.1);
+    width: 100%;
+}
+
+.banner .content-right {
+    margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+/* -----------------------------------------------
+
+                    Information
+
+----------------------------------------------- */
+
+.information {
+    background-color: #fff;
+}
+
+.information .text h2 {
+    margin: 2rem auto 1.5rem 0;
+}
+
+.information .author {
+    margin-top: 2rem;
+}
+
+.information .content-right {
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 40%;
+}
+
+.content {
+    align-items: center;
+    justify-content: center; 
+}
+
+.content .img-container {
+    width: 40%;
+    height: auto;
+    padding: 1rem 1rem;
+}
+
+.content .text {
+    width: 60%;
     padding-right: 1.5rem;
 }
 
-nav ul li {
-    padding-left: 1rem;
+.content .text h3 {
+    padding-top: 0;
+}
+
+.content .text p {
+    padding: 0.5rem 0;
+}
+
+.content .text a {
+    font-weight: bold;
+    color: rgb(0, 162, 255);
+}
+
+/* -----------------------------------------------
+
+                    Courses
+
+----------------------------------------------- */
+
+.courses {
+    background-color:rgba(48, 48, 48, 0.1);
 }
 
 /* switching between mobile and desktop viewports */
@@ -87,6 +231,8 @@ nav ul li {
     .desktop {
         display: none;
     }
+
+    /* removing the main logo in the header and setting all icons to spread out evenly */
 
     header .logo {
        display: none;
