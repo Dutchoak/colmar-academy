@@ -12,36 +12,50 @@
 
 <body>
 
-    <!-- The fixed and responsive header -->
+    <!-- 
+        
+        HEADER
 
-    <header class="flex-container">
-        <a  class="logo desktop flex-container" href="index.html" alt="Homepage">
-            <img src="./resources/images/ic-logo.svg" alt="">
-            <span>COLMAR<span id="academy">ACADEMY</span></span>
-        </a>
-        <nav>
-            <ul class="desktop flex-container">
-                <li><a href="#">On campus</a></li>
-                <li><a href="#">Online</a></li>
-                <li><a href="#">Our companies</a></li>
-                <li><a href="#">Sign in</a></li>
-            </ul>
-            <ul class="mobile flex-container">
-                <li><a href="#" title="Home"><img src="./resources/images/ic-logo.svg" alt="Colmar University"></a></li>
-                <li><a href="#" title="On campus"><img src="./resources/images/ic-on-campus.png" alt="On campus"></a></li>
-                <li><a href="#" title="Online"><img src="./resources/images/ic-online.svg" alt="Online"></a></li>
-                <li><a href="#" title="Sign in"><img src="./resources/images/ic-login.svg" alt="Sign in"></a></li>
-            </ul>
-        </nav>
+    -->
+
+    <header>
+        <div class="container border-bottom flex-container">
+            <a  class="logo desktop flex-container" href="index.html" alt="Homepage">
+                <img src="./resources/images/ic-logo.svg" alt="">
+                <span>COLMAR<span id="academy">ACADEMY</span></span>
+            </a>
+            <nav>
+                <ul class="desktop flex-container">
+                    <li><a href="#">On campus</a></li>
+                    <li><a href="#">Online</a></li>
+                    <li><a href="#">Our companies</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+                <ul class="mobile flex-container">
+                    <li><a href="#" title="Home"><img src="./resources/images/ic-logo.svg" alt="Colmar University"></a></li>
+                    <li><a href="#" title="On campus"><img src="./resources/images/ic-on-campus.png" alt="On campus"></a></li>
+                    <li><a href="#" title="Online"><img src="./resources/images/ic-online.svg" alt="Online"></a></li>
+                    <li><a href="#" title="Sign in"><img src="./resources/images/ic-login.svg" alt="Sign in"></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- The main body -->
+    <!-- 
+        
+        MAIN
 
-    <div class="main">
+    -->
 
-        <!-- The main banner -->
+    <div class="main border-bottom">
 
-        <div class="banner flex-container">
+        <!-- 
+            
+            BANNER
+
+        -->
+
+        <div class="banner gray flex-container">
             <div class="img-container-large">
                 <img src="./resources/images/banner.jpg" alt="Three people studying at Colmar Academy">
             </div>
@@ -52,21 +66,25 @@
             </div>
         </div>
 
-        <!-- The information section (content-left should dissapear on mobile)-->
+        <!-- 
+            
+            INFORMATION
+
+        -->
 
         <div class="information flex-container">
             <div class="img-container-large desktop">
                 <img src="./resources/images/information-main.jpg" alt="Student reading a book">
                 <div class="text">
                     <h2>It doesn't hurt to keep practicing</h2>
-                    <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+                    <p class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
                         nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget 
                     magna laoreet, efficitur dolorconsequat, tristique ligula."</p>
                     <p class="author">Emanuel, Sr Strategist at Hiring.com</p>
                 </div>
             </div>
             <div class="content-right flex-container">
-                <div class="content first flex-container">
+                <div class="content first border-bottom flex-container">
                     <div class="img-container">
                         <img class="desktop" src="./resources/images/information-orientation.jpg" alt="top down view of people walking on a cobblestone path">
                         <img class="mobile" src="./resources/images/information-orientation-mobile.jpg" alt="top down view of people walking on a cobblestone path">
@@ -77,7 +95,7 @@
                         <a href="#">Read more</a>
                     </div>
                 </div>
-                <div class="content flex-container">
+                <div class="content border-bottom flex-container">
                     <div class="img-container">
                         <img class="desktop" src="./resources/images/information-campus.jpg" alt="students studying infront of a map of south america">
                         <img class="mobile" src="./resources/images/information-campus-mobile.jpg" alt="students studying infront of a map of south america">
@@ -88,7 +106,7 @@
                         <a href="#">Read more</a>
                     </div>
                 </div>
-                <div class="content guest flex-container">
+                <div class="content gray flex-container">
                     <div class="img-container">
                         <img class="desktop" src="./resources/images/information-guest-lecture.jpg" alt="portait picture of Oliver Sack">
                         <img class="mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="portrait picture of Oliver Sack">
@@ -102,12 +120,16 @@
             </div>
         </div>
 
-        <!-- The courses offered by CA -->
+        <!-- 
+            
+            COURSES
 
-        <div class="courses">
-            <h2>Start learning</h2>
-            <div class="container">
-                <div class="content">
+         -->
+
+        <div class="courses gray">
+            <h2 class="center">Start learning</h2>
+            <div class="container flex-container">
+                <div class="course">
                     <div class="img-container">
                         <img src="./resources/images/course-software.jpg" alt="Software engineering at Colmar Acadamy">
                     </div>
@@ -117,7 +139,7 @@
                         <p>Web Development, mobile Development, iOT, APIs</p>
                     </div>
                 </div>
-                <div class="content">
+                <div class="course">
                     <div class="img-container">
                         <img src="./resources/images/course-computer-art.jpg" alt="Computer arts at Colmar Acadamy">
                     </div>
@@ -127,7 +149,7 @@
                         <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                     </div>
                 </div>
-                <div class="content">
+                <div class="course">
                     <div class="img-container">
                         <img src="./resources/images/course-design.jpg" alt="Design at Colmar Acadamy">
                     </div>
@@ -137,7 +159,7 @@
                         <p>User Experience Design, User Research, Visual Design</p>
                     </div>
                 </div>
-                <div class="content">
+                <div class="course">
                     <div class="img-container">
                         <img src="./resources/images/course-data.jpg" alt="Data at Colmar Acadamy">
                     </div>
@@ -147,7 +169,7 @@
                         <p>Data Science, Big Data, SQL, Data Visualization</p>
                     </div>
                 </div>
-                <div class="content">
+                <div class="course">
                     <div class="img-container">
                         <img src="./resources/images/course-business.jpg" alt="Business at Colmar Acadamy">
                     </div>
@@ -157,7 +179,7 @@
                         <p>Product Development, Business Development, Startup</p>
                     </div>
                 </div>
-                <div class="content">
+                <div class="course">
                     <div class="img-container">
                         <img src="./resources/images/course-marketing.jpg" alt="Marketing at Colmar Acadamy">
                     </div>
@@ -170,46 +192,56 @@
             </div>
         </div>
 
-        <!-- Thesis exhibit section where only the video shows on mobile -->
+        <!-- 
+            
+            THESIS
+
+         -->
 
         <div class="thesis">
-            <h2>Thesis exhibit</h2>
-            <div class="content-left">
-                <video src="./resources/videos/thesis.mp4"></video>
-                <div class="desktop">
-                    <h3>Reimagine urban</h3>
-                    <p class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
-                        nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget 
-                    magna laoreet, efficitur dolorconsequat, tristique ligula."</p>
-                </div>
-            </div>
-            <div class="content-right desktop">
-                <div class="content">
-                    <div class="img-container">
-                        <img src="./resources/images/thesis-fisma.jpg" alt="Fisma showcase">
-                    </div>
-                    <div class="text">
-                        <h3>Fisma: Design and Prototype</h3>
-                        <p>Designer showcase of new prototype product</p>
+            <h2 class="center">Thesis exhibit</h2>
+            <div class="flex-container">
+                <div class="img-container-large">
+                    <video src="./resources/videos/thesis.mp4"></video>
+                    <div class="desktop">
+                        <h3>Reimagine urban</h3>
+                        <p class="quote">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+                            nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget 
+                        magna laoreet, efficitur dolorconsequat, tristique ligula."</p>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="img-container">
-                        <img src="./resources/images/thesis-now-and-then.jpg" alt="Empire state building in New York">
+                <div class="content-right flex-container desktop">
+                    <div class="content gray first flex-container">
+                        <div class="img-container">
+                            <img src="./resources/images/thesis-fisma.jpg" alt="Fisma showcase">
+                        </div>
+                        <div class="text">
+                            <h3>Fisma: Design and Prototype</h3>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h3>Now and then</h3>
-                        <p>Research study about New York</p>
+                    <div class="content flex-container">
+                        <div class="img-container">
+                            <img src="./resources/images/thesis-now-and-then.jpg" alt="Empire state building in New York">
+                        </div>
+                        <div class="text">
+                            <h3>Now and then</h3>
+                            <p>Research study about New York</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- The footer where the span doesn't show for mobile -->
+    <!-- 
+        
+        FOOTER
 
-    <footer>
-        &copy; 2016 Colmar Academy. All rights reserved
+     -->
+
+    <footer class="flex-container">
+        <span>&copy; 2016 Colmar Academy. All rights reserved</span>
         <span class="desktop"><a href="#">Terms</a> <a href="#">Privacy</a></span>        
     </footer>
 
