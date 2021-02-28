@@ -1,8 +1,12 @@
-/*  ---- TO DO ----
+/*  
+    ---- TO DO ----
 
     - Add a sans-serif font with more than three font-weight options
-    - Add mobile responsiveness for the main and footer sections
-    - 
+    - Set up a grid for the COURSES section to provide 2 dimensions instead of 1
+    - Set up a responsive design for tablets as well
+    - Create animations for :hover : banner->button; a->information; course->courses (both desktop & mobile); a->footer.
+
+    ---------------
 */
 
 body {
@@ -55,10 +59,10 @@ img {
 
 button {
     color: #fff;
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 1rem 0 1rem 0;
     background-color:rgb(68, 68, 68);
     border: none;
-    border-radius: 1rem;
+    max-width: 25rem;
 }
 
 .flex-container {
@@ -285,6 +289,12 @@ nav .desktop a:hover::before {
     min-width: 300px;
 }
 
+.course h3,
+.course p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
 /* -----------------------------------------------
 
                     Thesis
@@ -313,8 +323,7 @@ video {
 footer {
     padding: 1rem 1.5rem 4rem 1rem;
     justify-content: space-between;
-    border-top: rgb(255, 0, 0);
-    z-index: 2;
+    border-top: rgba(48, 48, 48, 0.1) 1px solid;
 }
 
 /* -----------------------------------------------
@@ -328,7 +337,42 @@ footer {
         display: none;
     }
 
-    /* removing the main logo in the header and setting all icons to spread out evenly */
+    .img-container-large,
+    .banner .content-right,
+    .information .content-right,
+    .information .img-container {
+        width: 100%;
+    }
+
+    .img-container-large {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p,
+    a {
+        font-size: 1.75rem;
+    }
+
+    .border-bottom {
+        border-bottom: none;
+        margin-bottom: 4rem;
+    }
+
+    /* HEADER */
 
     header .logo {
        display: none;
@@ -338,6 +382,77 @@ footer {
         width: 100%;
         margin-left: 0;
     }
+
+    /* BANNER */
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner .content-right {
+        box-sizing:border-box;
+        padding: 2rem 1rem;
+    }
+
+    button {
+        font-size: 1.4rem;
+        font-weight: bolder;
+        background-color:rgba(48, 48, 48, 0.3);
+        border-radius: 0;
+        padding: 1rem 0 1rem 0;
+    }
+
+    /* INFORMATION */
+
+    .information .content {
+        flex-direction: column;
+    }
+
+    .information .img-container {
+        box-sizing: border-box;
+    }
+
+    .first {
+        margin-top: 0;
+    }
+
+    .content .text {
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+    #guest {
+        background-color: #fff;
+        padding-bottom: 2rem;
+    }
+
+    /* COURSES */
+
+    .courses {
+        background-color: #fff !important;
+        border-top:rgba(48, 48, 48, 0.1) 1px solid;
+        border-bottom:rgba(48, 48, 48, 0.1) 1px solid;
+    }
+
+    .courses .container {
+        margin: 1rem;
+    }
+
+    .courses ul {
+        width: 100%;
+    }
+    .courses li {
+        box-sizing: border-box;
+        background-color:rgba(48, 48, 48, 0.1);
+        margin-bottom: 0.5rem;
+        padding: 1rem 0 1.5rem 1rem;
+    }
+
+    /* THESIS */
+
+
+
 }
 
 @media only screen and (min-width: 625px) {
